@@ -9,6 +9,8 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 		<link rel="stylesheet" href="../css/mui.min.css">
+		<script type="text/javascript" src="../js/web.js" ></script>
+		
 	</head>
 
 	<body>
@@ -50,7 +52,7 @@
 						table.insertBefore(li, table.firstChild);
 					}
 					mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
-				}, 1500);
+				}, 800);
 			}
 			var count = 0;
 			/**
@@ -58,16 +60,21 @@
 			 */
 			function pullupRefresh() {
 				setTimeout(function() {
+					
 					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
 					var table = document.body.querySelector('.mui-table-view');
 					var cells = document.body.querySelectorAll('.mui-table-view-cell');
-					for (var i = cells.length, len = i + 20; i < len; i++) {
+					for (var i = cells.length, len = i + 10; i < len; i++) {
 						var li = document.createElement('li');
 						li.className = 'mui-table-view-cell';
 						li.innerHTML = '<a class="mui-navigate-right">Item ' + (i + 1) + '</a>';
 						table.appendChild(li);
 					}
-				}, 1500);
+					
+					getWorklogPaged(1);
+					
+				}, 800);
+				
 			}
 			if (mui.os.plus) {
 				mui.plusReady(function() {
@@ -82,6 +89,7 @@
 				});
 			}
 		</script>
+		
 	</body>
 
 </html>
