@@ -10,7 +10,7 @@ function getActionUrl(methord){
 		+ virtualdir_user 
 		+ "/" 
 		+ interface_user 
-		+ "/" 
+		+ "/"
 		+ methord;
 }
 
