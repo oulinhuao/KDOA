@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../css/login.css" rel="stylesheet" />
+		
+		<style>
+			html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+		</style>
+		    
+		<style>
+			body{
+				height: 100%;
+				background-image: url(../images/oa_home_page_bg.jpg);
+				background-size: cover;
+			}
+			
+			.layout_content{
+				height: 100%;
+				width: 100%;
+				TEXT-ALIGN: center; MARGIN-RIGHT: auto; MARGIN-LEFT: auto;
+			}
+			
+			.title{
+				width: 100%;
+				height: 12vw;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				background-color: #207dba;
+			}
+			
+			.title_text{
+			    width: min-intrinsic;
+				font: "微软雅黑";
+				display: block;
+				text-align: center;
+				margin-top: 15px;
+				font-weight:bold;
+				font-size: 6vw;
+				color: #fff;
+			}
+			
+			#title_btn_right{
+				float: right;
+				margin-right: 4px;
+				margin-top: 2px;
+				overflow: hidden;
+				vertical-align: middle;
+				text-align:center
+			}
+			
+			#title_btn_left{
+				float: left;
+				margin-left: 4px;
+				margin-top: 2px;
+				overflow: hidden;
+				vertical-align: middle;
+				text-align:center
+			}
+			
+			#title_btn_left img{
+				visibility: hidden;
+			}
+			
+			.layout_banner{
+				margin: 10px 10px 0px 10px;
+			}
+			
+			.layout_banner img{
+				width: 100%;
+			}
+			
+			.table_menu{
+				width: 100%;
+				height: auto;
+			}
+			.menu_row{
+				width: 100%;
+				height: auto;
+			}
+			
+			.menu_item1,.menu_item2{
+				padding-top: 10px;
+				width: 50%;
+				height: auto;
+			}
+			
+			.menu_item1{
+				padding-left: 10px;
+				padding-right: 5px;
+			}
+			
+			.menu_item2{
+				padding-left: 5px;
+				padding-right: 10px;
+			}
+			
+			.layout_item img{
+				width: 100%;
+			}
+
+			.menu_item_text{
+				width: min-intrinsic;
+				font: "微软雅黑";
+				display: block;
+				text-align: center;
+				margin-top: -20%;
+				font-weight:bold;
+				font-size: 4vw;
+				color: #fff;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="layout_content">
+			
+			<div id="title" class="title">
+				<a id="title_btn_left" class="title_btn_left"><img src="../images/head_people.png"/></a>
+				<a id="title_btn_right" class="title_btn_right"><img src="../images/head_people.png"/></a>
+				<span class="title_text">今点移动办公</span>
+			</div>
+			
+			<div class="layout_banner">
+				<img src="../images/oa_pic.jpg"/>
+			</div>
+			
+			<table class="table_menu">
+				<tr class="menu_row">
+					<td class="menu_item1" onclick="goWorkLog()">
+						<div class="layout_item">
+							<img src="../images/icon_worklog.jpg"/>
+							<span class="menu_item_text">工作日志</span>
+						</div>
+					</td>
+					<td class="menu_item2">
+						<div class="layout_item">
+							<img src="../images/icon_resources.jpg"/>
+							<span class="menu_item_text">信息资源</span>
+						</div>
+					</td>
+				</tr>
+				
+				<tr class="menu_row">
+					<td class="menu_item1">
+						<div class="layout_item">
+							<img src="../images/icon_contacts.jpg"/>
+							<span class="menu_item_text">通讯录</span>
+						</div>
+					</td>
+					<td class="menu_item2">
+						<div class="layout_item">
+							<img src="../images/icon_communicate.jpg"/>
+							<span class="menu_item_text">内部交流</span>
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+		</div>
+		
+		
+		<script src='../js/main.js'></script>
+	</body>
+	
+		
+</html>

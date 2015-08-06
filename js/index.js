@@ -63,3 +63,13 @@ function keepPwd(isKeep){
 	}
 }
 
+function login(){
+//	document.location.href("main.html");     
+	window.location.href = "./main.html";
+	
+}
+
+function goWorkLog(){
+	window.location.href = "./worklog.html";
+}
+
