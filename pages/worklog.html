@@ -1,32 +1,23 @@
 <!DOCTYPE html>
-<html class="ui-page-login">
+<html>
 
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title></title>
-		<link href="../css/login.css" rel="stylesheet" />
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
 		
 		<style>
-			html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-		</style>
-		    
-		<style>
+			html,body{height:100%;}
 			body{
-				height: 100%;
-				background-image: url(../images/oa_home_page_bg.jpg);
-				background-size: cover;
+				-webkit-overflow-scrolling: auto;
 			}
-			
-			.layout_content{
-				height: 100%;
-				width: 100%;
-				TEXT-ALIGN: center; MARGIN-RIGHT: auto; MARGIN-LEFT: auto;
-			}
-			
+		
 			.title{
 				width: 100%;
-				height: 12vw;
 				padding-top: 5px;
 				padding-bottom: 5px;
 				background-color: #207dba;
@@ -37,7 +28,8 @@
 				font: "微软雅黑";
 				display: block;
 				text-align: center;
-				margin-top: 15px;
+				padding-top: 10px;
+				padding-bottom: 10px;
 				font-weight:bold;
 				font-size: 6vw;
 				color: #fff;
@@ -46,7 +38,7 @@
 			#title_btn_right{
 				float: right;
 				margin-right: 4px;
-				margin-top: 2px;
+				margin-top: 4px;
 				overflow: hidden;
 				vertical-align: middle;
 				text-align:center
@@ -54,37 +46,168 @@
 			
 			#title_btn_left{
 				float: left;
-				margin-left: 4px;
-				margin-top: 2px;
+				margin-left: 10px;
+				margin-top: 10px;
 				overflow: hidden;
 				vertical-align: middle;
 				text-align:center
 			}
 			
+			.mui-slider,.mui-content{
+				top: 0px;
+				bottom: 0px;
+				height: 100%;
+				overflow: ;
+			}
+			
+			.mui-slider-group{
+				height: 100%;
+			}
+			
+			
 			
 		</style>
-
+		
 	</head>
 
 	<body>
-		<div class="layout_content">
-			
+		<div class="mui-content">
 			<div id="title" class="title">
-				<a id="title_btn_left" class="title_btn_left">
-					<img src="../images/icon_left_return.png"/>
-				</a>
-				<a id="title_btn_right" class="title_btn_right">
-					<img src="../images/icon_right_add.png"/>
-				</a>
-				<span class="title_text">工作日志</span>
-			</div>
-			
-			
+			<a id="title_btn_left" class="title_btn_left" onclick="common_Back()">
+				<img src="../images/icon_left_return.png"/>
+			</a>
+			<a id="title_btn_right" class="title_btn_right">
+				<img src="../images/icon_right_add.png"/>
+			</a>
+			<span class="title_text">工作日志</span>
 		</div>
-		
-		
-		
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">
+						工作日志
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						日志分析
+					</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<a href="">第一个选项卡，title1</a>
+										<a href="">第一个选项卡，content1</a>
+										<a href="">第一个选项卡，content2</a>
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-2
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-3
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-4
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-5
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-6
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-7
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-8
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-9
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-10
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-11
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-12
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-13
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-14
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-15
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-16
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-17
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-18
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-19
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-20
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: false
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+				var item2 = document.getElementById('item2mobile');
+				document.getElementById('slider').addEventListener('slide', function(e) {
+					if (e.detail.slideNumber === 1) {
+						if (item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.mui-scroll').innerHTML = html2;
+							}, 500);
+						}
+					}
+				});
+				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if (this.checked) {
+						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+						//force repaint
+						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+					}
+				});
+			})(mui);
+		</script>
+
 	</body>
-	
-		
+
 </html>
